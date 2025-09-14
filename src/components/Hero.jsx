@@ -14,7 +14,7 @@ export default function Hero(){
         </p>
       </div>
       <div className="avatar">
-                <img src="src\components\Generated Image September 14, 2025 - 9_24PM.png" alt="Hari Kiran's avatar" /></div>
+                <img src="Generated Image September 14, 2025 - 9_24PM.png" alt="Hari Kiran's avatar" /></div>
     </section>
   )
 }
