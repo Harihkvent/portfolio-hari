@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { FaGithub, FaLinkedin, FaInstagram, FaTwitter } from 'react-icons/fa'
 
 export default function Contact() {
   const [status, setStatus] = useState("")
@@ -40,6 +41,21 @@ export default function Contact() {
         <button type="submit">Send</button>
       </form>
       {status && <p style={{ marginTop: 12 }}>{status}</p>}
+
+      <div className="social-links">
+        <a href="https://github.com/Harihkvent" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <FaGithub />
+        </a>
+        <a href="https://www.linkedin.com/in/hari-kiran-ventrapragada" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <FaLinkedin />
+        </a>
+        <a href="https://www.instagram.com/harihk_24" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <FaInstagram />
+        </a>
+        <a href="https://x.com/harikiran24" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          <FaTwitter />
+        </a>
+      </div>
     </section>
   )
 }

@@ -223,6 +223,26 @@ body {
   box-shadow: 0 0 12px var(--accent2);
 }
 
+/* Social Links */
+.social-links {
+  text-align: center;
+  margin-top: 32px;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.social-links a {
+  color: var(--muted);
+  font-size: 1.75rem;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--accent);
+  transform: scale(1.2) translateY(-4px);
+}
+
 /* Footer */
 .footer {
   padding: 18px;
@@ -255,4 +275,7 @@ main.container {
   border-top: 1px solid rgba(255,255,255,0.1);
   padding: 16px;
   text-align: center;
+}
+html {
+  scroll-behavior: smooth;
 }
