@@ -8,7 +8,7 @@ export default function ProjectCard({project}){
       <div style={{marginTop:10}}>
         {project.tech.map(t => <span key={t} className="skill" style={{marginRight:6}}>{t}</span>)}
       </div>
-      <p style={{marginTop:10}}><a href={project.link} target="_blank" rel="noreferrer">View repository</a></p>
+      <a href={project.link} target="_blank" rel="noreferrer" className="project-link">View Repository</a>
     </article>
   )
 }

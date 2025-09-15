@@ -170,6 +170,25 @@ body {
               0 0 30px rgba(0, 60, 255, 0.5);
 }
 
+.project-card .project-link {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 8px 16px;
+  background: var(--accent);
+  color: #000;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.project-card .project-link:hover {
+  background: var(--accent2);
+  color: #fff;
+  box-shadow: 0 0 12px var(--accent2);
+  transform: translateY(-2px);
+}
+
 /* Skills */
 .skills { display: flex; flex-wrap: wrap; gap: 8px; }
 .skill {
