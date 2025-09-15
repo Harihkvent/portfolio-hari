@@ -3,7 +3,7 @@
   --card-bg: #11121a;
   --text: #e4e4e7;
   --accent: #0ff;       /* neon cyan */
-  --accent2: #ff00ff;   /* neon magenta */
+  --accent2: #23cfed;   /* neon magenta */
   --muted: #888;
 }
 
@@ -132,7 +132,7 @@ body {
 }
 .section:hover {
   transform: translateY(-6px) scale(1.01);
-  box-shadow: 0 0 28px rgba(255, 0, 255, 0.4);
+  box-shadow: 0 0 28px rgba(6, 125, 210, 0.4);
 }
 
 .section h2 {
@@ -167,7 +167,7 @@ body {
 .project-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 0 20px rgba(0,255,255,0.6),
-              0 0 30px rgba(255,0,255,0.5);
+              0 0 30px rgba(0, 60, 255, 0.5);
 }
 
 /* Skills */
@@ -238,7 +238,7 @@ body {
 .project-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 0 20px rgba(0,255,255,0.6),
-              0 0 30px rgba(255,0,255,0.5);
+              0 0 30px rgba(5, 219, 41, 0.5);
 }
 
 .app {
