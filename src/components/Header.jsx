@@ -7,7 +7,7 @@ export default function Header(){
       <nav>
         <a href="#projects">Work</a> &nbsp;·&nbsp;
         <a href="#contact">Contact</a> &nbsp;·&nbsp;
-        <a href="src\components\Hari_Kiran_ventrapragada.pdf" target="_blank" rel="noreferrer">Resume</a>
+        <a href="Hari_Kiran_ventrapragada.pdf" target="_blank" rel="noreferrer">Resume</a>
       </nav>
     </header>
   )
