@@ -2,6 +2,7 @@
 /node_modules
 /.pnp
 .pnp.js
+.pnp.js
 
 # production
 /dist
@@ -9,6 +10,7 @@
 # misc
 .DS_Store
 npm-debug.log*
+/.vite
 yarn-debug.log*
 yarn-error.log*
 
