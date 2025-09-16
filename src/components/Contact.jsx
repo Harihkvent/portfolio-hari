@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FaGithub, FaLinkedin, FaInstagram, FaTwitter } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaInstagram, FaTwitter, FaEnvelope } from 'react-icons/fa'
 
 export default function Contact() {
   const [status, setStatus] = useState("")
@@ -54,6 +54,9 @@ export default function Contact() {
         </a>
         <a href="https://x.com/harikiran24" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
           <FaTwitter />
+        </a>
+        <a href = "mailto:harikiranventrapragada@gmail.com" target="_blank" rel = "noopener noreferrer" aria-label = "Email">
+          <FaEnvelope />
         </a>
       </div>
     </section>
