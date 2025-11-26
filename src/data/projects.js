@@ -1,5 +1,14 @@
 export const projects = [
   {
+    id: 'dsa-visualization',
+    title: 'DSA Visualization Platform',
+    summary: 'Interactive web application for visualizing data structures and algorithms with step-by-step explanations and animations.',
+    tech: ['JavaScript', 'React', 'CSS', 'Algorithms'],
+    link: 'https://github.com/Harihkvent/DSA-VISUALIZATION',
+    demo: 'https://dsa-visualization-phi.vercel.app/',
+    featured: true
+  },
+  {
     id: 'docker-automation',
     title: 'Docker Automation Dashboard',
     summary: 'Automated Docker container/image management via a React UI and Dockerode-based Express APIs.',
