@@ -13,7 +13,8 @@ export const projects = [
     title: 'Docker Automation Dashboard',
     summary: 'Automated Docker container/image management via a React UI and Dockerode-based Express APIs.',
     tech: ['React', 'Express', 'Dockerode', 'Docker'],
-    link: 'https://github.com/Harihkvent/Docker-Automation.git'
+    link: 'https://github.com/Harihkvent/Docker-Automation.git',
+    demo: 'https://docker-automation-client.vercel.app/'
   },
   {
     id: 'icss',
