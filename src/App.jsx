@@ -7,9 +7,12 @@ import Skills from './components/Skills'
 import Contact from './components/Contact'
 import Experience from './components/Experience'
 
+import ScrollToTop from './components/ScrollToTop'
+
 export default function App() {
   return (
     <div className="app">
+      <ScrollToTop />
       <Header />
       <main className="container">
         <Hero />
@@ -19,7 +22,9 @@ export default function App() {
         <Skills />
         <Contact />
       </main>
-      <footer className="footer">© {new Date().getFullYear()} Hari Kiran. Built with React.</footer>
+      <footer className="footer">
+        © {new Date().getFullYear()} Hari Kiran. Crafted with ❤️ using React & Vite.
+      </footer>
     </div>
   )
 }

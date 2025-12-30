@@ -1,11 +1,11 @@
 import React from 'react'
 
 const skillCategories = {
-  'Languages': ['Python', 'JavaScript', 'Java', 'SQL'],
-  'Frontend': ['React', 'HTML/CSS', 'Vite'],
-  'Backend': ['Node.js', 'Express', 'Flask', 'FastAPI'],
-  'DevOps & Tools': ['Docker', 'Git', 'MongoDB', 'FAISS'],
-  'AI/ML': ['LLMs', 'Generative AI', 'Vector Search', 'Tesseract OCR']
+  '💻 Languages': ['Python', 'JavaScript', 'Java', 'SQL'],
+  '🎨 Frontend': ['React', 'HTML/CSS', 'Vite'],
+  '⚙️ Backend': ['Node.js', 'Express', 'Flask', 'FastAPI'],
+  '🚀 DevOps & Tools': ['Docker', 'Git', 'MongoDB', 'FAISS'],
+  '🤖 AI/ML': ['LLMs', 'Generative AI', 'Vector Search', 'Tesseract OCR']
 }
 
 export default function Skills(){

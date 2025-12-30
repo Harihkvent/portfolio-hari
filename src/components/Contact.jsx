@@ -27,20 +27,27 @@ export default function Contact() {
 
   return (
     <section className="section" id="contact">
-      <h2>Contact</h2>
+      <h2>Get In Touch</h2>
+      <p className="section-desc">
+        Have a project in mind or want to collaborate? Feel free to reach out!
+      </p>
       <form onSubmit={handleSubmit} className="contact-form">
         <label>Name</label>
-        <input type="text" name="name" required />
+        <input type="text" name="name" placeholder="Your name" required />
 
         <label>Email</label>
-        <input type="email" name="email" required />
+        <input type="email" name="email" placeholder="your.email@example.com" required />
 
         <label>Message</label>
-        <textarea name="message" rows="4" required />
+        <textarea name="message" rows="5" placeholder="Tell me about your project..." required />
 
-        <button type="submit">Send</button>
+        <button type="submit">Send Message ✨</button>
       </form>
-      {status && <p style={{ marginTop: 12 }}>{status}</p>}
+      {status && (
+        <p className="status-message">
+          {status}
+        </p>
+      )}
 
       <div className="social-links">
         <a href="https://github.com/Harihkvent" target="_blank" rel="noopener noreferrer" aria-label="GitHub">

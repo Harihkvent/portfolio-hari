@@ -2,16 +2,17 @@ import React from 'react'
 
 export default function Header(){
   return (
-    <header className="container header">
-      <div style={{fontWeight:700}}>
-        <a href="#top" style={{textDecoration: "none", color: "inherit"}}>
-          Hari Kiran
-        </a>
+    <header className="header">
+      <div>
+        <a href="#top">Hari Kiran</a>
       </div>
       <nav>
-        <a href="#projects">Work</a> &nbsp;·&nbsp;
-        <a href="#contact">Contact</a> &nbsp;·&nbsp;
-        <a href="/resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="/resume.pdf" target="_blank" rel="noreferrer" className="nav-resume">Resume</a>
       </nav>
     </header>
   )
