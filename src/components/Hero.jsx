@@ -14,9 +14,9 @@ export default function Hero() {
         </h1>
         <p className="hero-subtitle">AI Engineer · Full-Stack Dev · DevOps</p>
         <p className="hero-desc">
-          Final-year B.Tech (IT) student passionate about Generative AI,
-          Agentic systems, and building production-ready software. I turn
-          complex ideas into intelligent, scalable solutions.
+          Software Engineer specialising in Generative AI, Agentic systems,
+          and full-stack development. I architect intelligent, scalable
+          solutions — from LLM-powered pipelines to production DevOps workflows.
         </p>
         <div className="hero-actions">
           <a href="#projects" className="btn-primary">
@@ -66,9 +66,9 @@ export default function Hero() {
             <span className="t-string">"Agentic AI"</span><span className="t-comment">,</span>
           </span>
           <span className="t-line">
-            &nbsp;&nbsp;<span className="t-key">"cgpa"</span>
+            &nbsp;&nbsp;<span className="t-key">"stack"</span>
             <span className="t-comment">: </span>
-            <span className="t-val">7.64</span><span className="t-comment">,</span>
+            <span className="t-string">"MERN · FastAPI · Docker"</span><span className="t-comment">,</span>
           </span>
           <span className="t-line">
             &nbsp;&nbsp;<span className="t-key">"status"</span>
