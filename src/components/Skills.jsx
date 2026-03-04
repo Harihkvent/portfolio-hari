@@ -1,21 +1,53 @@
 import React from 'react'
 
-const skillCategories = {
-  '💻 Languages': ['Python', 'JavaScript', 'Java', 'SQL'],
-  '🎨 Frontend': ['React', 'HTML/CSS', 'Vite'],
-  '⚙️ Backend': ['Node.js', 'Express', 'Flask', 'FastAPI'],
-  '🚀 DevOps & Tools': ['Docker', 'Git', 'MongoDB', 'FAISS'],
-  '🤖 AI/ML': ['LLMs', 'Generative AI', 'Vector Search', 'Tesseract OCR']
-}
+const skillCategories = [
+  {
+    icon: '💻',
+    title: 'Languages',
+    skills: ['Python', 'JavaScript', 'Java', 'SQL']
+  },
+  {
+    icon: '🎨',
+    title: 'Frontend',
+    skills: ['React', 'HTML/CSS', 'Vite', 'Tailwind']
+  },
+  {
+    icon: '⚙️',
+    title: 'Backend',
+    skills: ['Node.js', 'Express', 'Flask', 'FastAPI']
+  },
+  {
+    icon: '🐳',
+    title: 'DevOps & Cloud',
+    skills: ['Docker', 'Git', 'CI/CD', 'AWS', 'Prometheus']
+  },
+  {
+    icon: '🤖',
+    title: 'AI / ML',
+    skills: ['LLMs', 'Generative AI', 'MCP Agents', 'FAISS', 'Vector Search', 'Tesseract OCR']
+  },
+  {
+    icon: '🗄️',
+    title: 'Databases',
+    skills: ['MongoDB', 'PostgreSQL', 'Redis', 'FAISS']
+  }
+]
 
 export default function Skills(){
   return (
     <section className="section" id="skills">
-      <h2>Technical Skills</h2>
+      <div className="section-header">
+        <span className="section-prompt">~/</span>
+        <h2>Skills</h2>
+      </div>
+      <div className="section-line"></div>
       <div className="skills-grid">
-        {Object.entries(skillCategories).map(([category, skills]) => (
-          <div key={category} className="skill-category">
-            <h4 className="skill-category-title">{category}</h4>
+        {skillCategories.map(({ icon, title, skills }) => (
+          <div key={title} className="skill-category">
+            <div className="skill-category-header">
+              <span className="skill-category-icon">{icon}</span>
+              <span className="skill-category-title">{title}/</span>
+            </div>
             <div className="skills">
               {skills.map(s => <span key={s} className="skill">{s}</span>)}
             </div>

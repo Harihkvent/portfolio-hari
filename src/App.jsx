@@ -23,7 +23,8 @@ export default function App() {
         <Contact />
       </main>
       <footer className="footer">
-        © {new Date().getFullYear()} Hari Kiran. Crafted with ❤️ using React & Vite.
+        <span className="footer-prompt">❯</span>
+        <span>© {new Date().getFullYear()} Hari Kiran · Built with React & Vite</span>
       </footer>
     </div>
   )
