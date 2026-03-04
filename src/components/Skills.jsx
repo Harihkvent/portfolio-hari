@@ -1,4 +1,5 @@
 import React from 'react'
+import { useScrollReveal } from '../hooks/useScrollReveal'
 
 const skillCategories = [
   {
@@ -34,8 +35,9 @@ const skillCategories = [
 ]
 
 export default function Skills(){
+  const ref = useScrollReveal()
   return (
-    <section className="section" id="skills">
+    <section className="section reveal" id="skills" ref={ref}>
       <div className="section-header">
         <span className="section-prompt">~/</span>
         <h2>Skills</h2>

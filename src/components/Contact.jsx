@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import { FaGithub, FaLinkedin, FaInstagram, FaTwitter, FaEnvelope } from 'react-icons/fa'
+import { useScrollReveal } from '../hooks/useScrollReveal'
 
 export default function Contact() {
   const [status, setStatus] = useState("")
+  const ref = useScrollReveal()
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -26,7 +28,7 @@ export default function Contact() {
   }
 
   return (
-    <section className="section" id="contact">
+    <section className="section reveal" id="contact" ref={ref}>
       <div className="section-header">
         <span className="section-prompt">~/</span>
         <h2>Contact</h2>

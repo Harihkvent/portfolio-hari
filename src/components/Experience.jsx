@@ -1,8 +1,10 @@
 import React from 'react'
+import { useScrollReveal } from '../hooks/useScrollReveal'
 
 export default function Experience() {
+  const ref = useScrollReveal()
   return (
-    <section className="section" id="experience">
+    <section className="section reveal" id="experience" ref={ref}>
       <div className="section-header">
         <span className="section-prompt">~/</span>
         <h2>Experience</h2>

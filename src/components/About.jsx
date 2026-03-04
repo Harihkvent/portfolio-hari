@@ -1,8 +1,21 @@
 import React from 'react'
+import { useScrollReveal } from '../hooks/useScrollReveal'
+import { useCountUp } from '../hooks/useCountUp'
+
+function StatCard({ target, decimals, suffix, label }) {
+  const { displayValue, ref } = useCountUp(target, { decimals, suffix })
+  return (
+    <div className="stat-card" ref={ref}>
+      <span className="stat-value">{displayValue}</span>
+      <span className="stat-label">{label}</span>
+    </div>
+  )
+}
 
 export default function About(){
+  const ref = useScrollReveal()
   return (
-    <section className="section" id="about">
+    <section className="section reveal" id="about" ref={ref}>
       <div className="section-header">
         <span className="section-prompt">~/</span>
         <h2>About Me</h2>
@@ -26,24 +39,13 @@ export default function About(){
           </div>
         </div>
         <div className="about-stats">
-          <div className="stat-card">
-            <span className="stat-value">7.64</span>
-            <span className="stat-label">CGPA</span>
-          </div>
-          <div className="stat-card">
-            <span className="stat-value">5+</span>
-            <span className="stat-label">Projects</span>
-          </div>
-          <div className="stat-card">
-            <span className="stat-value">2</span>
-            <span className="stat-label">Internships</span>
-          </div>
-          <div className="stat-card">
-            <span className="stat-value">2026</span>
-            <span className="stat-label">Graduation</span>
-          </div>
+          <StatCard target={7.64} decimals={2} suffix="" label="CGPA" />
+          <StatCard target={5}    decimals={0}  suffix="+" label="Projects" />
+          <StatCard target={2}    decimals={0}  suffix="" label="Internships" />
+          <StatCard target={2026} decimals={0}  suffix="" label="Graduation" />
         </div>
       </div>
     </section>
   )
 }
+

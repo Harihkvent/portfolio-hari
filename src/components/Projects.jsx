@@ -1,10 +1,12 @@
 import React from 'react'
 import { projects } from '../data/projects'
 import ProjectCard from './ProjectCard'
+import { useScrollReveal } from '../hooks/useScrollReveal'
 
 export default function Projects(){
+  const ref = useScrollReveal()
   return (
-    <section className="section" id="projects">
+    <section className="section reveal" id="projects" ref={ref}>
       <div className="section-header">
         <span className="section-prompt">~/</span>
         <h2>Projects</h2>
