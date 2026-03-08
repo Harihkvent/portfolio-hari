@@ -17,7 +17,7 @@ export default function Experience() {
               <h3>OmniqAI Pvt Ltd</h3>
               <p className="exp-company">Bengaluru, India</p>
             </div>
-            <span className="exp-period">May 2025 – Jul 2025</span>
+            <span className="exp-period">May – Jul 2025</span>
           </div>
           <span className="exp-role">AI DevOps Intern</span>
           <ul>
