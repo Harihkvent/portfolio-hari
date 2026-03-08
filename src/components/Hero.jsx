@@ -9,29 +9,28 @@ export default function Hero() {
           Available for opportunities
         </div>
         <h1>
-          Hi, I'm{" "}
+          Hi — I'm{" "}
           <span className="hero-title-accent">Hari Kiran</span>
         </h1>
-        <p className="hero-subtitle">AI Engineer · Full-Stack Dev · DevOps</p>
+        <p className="hero-subtitle">SDE & GenAI Builder · Full-Stack · DevOps</p>
         <p className="hero-desc">
-          Software Engineer specialising in Generative AI, Agentic systems,
-          and full-stack development. I architect intelligent, scalable
-          solutions — from LLM-powered pipelines to production DevOps workflows.
+          I build full-stack products and production-ready GenAI prototypes —
+          from LLM-powered pipelines and MCP agent orchestration to
+          containerised microservices and CI/CD workflows.
         </p>
         <div className="hero-actions">
           <a href="#projects" className="btn-primary">
             View Projects →
           </a>
-          <a href="#contact" className="btn-secondary">
-            Get In Touch
-          </a>
           <a
             href="/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
+            download="Harikiran_Ventrapragada_Resume.pdf"
             className="btn-secondary"
           >
-            Resume ↗
+            Download Resume ↓
+          </a>
+          <a href="#contact" className="btn-secondary">
+            Contact Me
           </a>
         </div>
       </div>
@@ -58,7 +57,7 @@ export default function Hero() {
           <span className="t-line">
             &nbsp;&nbsp;<span className="t-key">"role"</span>
             <span className="t-comment">: </span>
-            <span className="t-string">"AI Engineer"</span><span className="t-comment">,</span>
+            <span className="t-string">"SDE & GenAI Builder"</span><span className="t-comment">,</span>
           </span>
           <span className="t-line">
             &nbsp;&nbsp;<span className="t-key">"focus"</span>
