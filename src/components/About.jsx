@@ -23,6 +23,15 @@ export default function About(){
       <div className="section-line"></div>
       <div className="about-content">
         <div className="about-text">
+          <div className="about-avatar">
+            <img
+              src="/avatar.png"
+              alt="Hari Kiran Ventrapragada — Software Engineer"
+              loading="lazy"
+              width="120"
+              height="120"
+            />
+          </div>
           <p>
             I'm a Software Engineer with hands-on expertise in <strong style={{color: 'var(--text)'}}>Generative AI</strong>,{' '}
             <strong style={{color: 'var(--text)'}}>Agentic systems</strong>, and full-stack development.
