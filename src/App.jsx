@@ -24,7 +24,7 @@ export default function App() {
       </main>
       <footer className="footer">
         <span className="footer-prompt">❯</span>
-        <span>© {new Date().getFullYear()} Hari Kiran · Built with React & Vite</span>
+        <span>© {new Date().getFullYear()} Hari Kiran Ventrapragada · Built with React & Vite</span>
       </footer>
     </div>
   )

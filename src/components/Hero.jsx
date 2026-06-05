@@ -10,7 +10,7 @@ export default function Hero() {
         </div>
         <h1>
           Hi — I'm{" "}
-          <span className="hero-title-accent">Hari Kiran</span>
+          <span className="hero-title-accent">Hari Kiran Ventrapragada</span>
         </h1>
         <p className="hero-subtitle">SDE & GenAI Builder · Full-Stack · DevOps</p>
         <p className="hero-desc">
