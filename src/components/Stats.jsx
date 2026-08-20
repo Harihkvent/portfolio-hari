@@ -24,8 +24,8 @@ export default function Stats() {
 
         <div className="stat-card">
           <div className="stat-icon">🤖</div>
-          <span className="stat-value">3</span>
-          <span className="stat-label">Flagship Projects</span>
+          <span className="stat-value">8</span>
+          <span className="stat-label">Projects Showcased</span>
         </div>
 
         <div className="stat-card">

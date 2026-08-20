@@ -51,7 +51,7 @@ export default function About(){
         <div className="about-stats">
           <StatCard target={3}  decimals={0} suffix="" label="OmniqAI Roles" />
           <StatCard target={10} decimals={0} suffix="+" label="RCA Documents" />
-          <StatCard target={3}  decimals={0} suffix="" label="Flagship Projects" />
+          <StatCard target={8}  decimals={0} suffix="" label="Projects Showcased" />
           <StatCard target={1}  decimals={0} suffix=" yr" label="Industry Experience" />
         </div>
       </div>
