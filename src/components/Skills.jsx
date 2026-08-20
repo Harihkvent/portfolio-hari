@@ -5,32 +5,32 @@ const skillCategories = [
   {
     icon: '💻',
     title: 'Languages',
-    skills: ['Python', 'JavaScript', 'Java', 'SQL']
+    skills: ['Python', 'JavaScript', 'TypeScript', 'Java', 'SQL', 'C++']
   },
   {
     icon: '🎨',
     title: 'Frontend',
-    skills: ['React', 'HTML/CSS', 'Vite', 'Tailwind']
+    skills: ['React', 'TypeScript', 'Tailwind CSS', 'React Native', 'Vite']
   },
   {
     icon: '⚙️',
     title: 'Backend',
-    skills: ['Node.js', 'Express', 'Flask', 'FastAPI']
+    skills: ['Python', 'FastAPI', 'Node.js', 'Express', 'REST APIs', 'WebSockets']
   },
   {
     icon: '🐳',
     title: 'DevOps & Cloud',
-    skills: ['Docker', 'Git', 'CI/CD', 'AWS', 'Prometheus']
+    skills: ['Docker', 'AWS', 'GitHub Actions', 'Prometheus', 'Linux', 'Gitea CI']
   },
   {
     icon: '🤖',
     title: 'AI / ML',
-    skills: ['LLMs', 'Generative AI', 'MCP Agents', 'FAISS', 'Vector Search', 'Tesseract OCR']
+    skills: ['RAG', 'LangChain', 'LangGraph', 'Embeddings', 'Semantic Search', 'Prompt Engineering']
   },
   {
     icon: '🗄️',
     title: 'Databases',
-    skills: ['MongoDB', 'PostgreSQL', 'Redis', 'FAISS']
+    skills: ['MongoDB', 'Redis', 'Neo4j', 'FAISS', 'SQL']
   }
 ]
 

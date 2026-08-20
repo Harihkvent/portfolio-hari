@@ -15,7 +15,7 @@ export default function ProjectCard({project}){
         {project.featured && <span className="featured-badge">★ featured</span>}
       </div>
       <div className="project-card-body">
-        <h4>{project.title}</h4>
+        <h3>{project.title}</h3>
         <p>{project.summary}</p>
         {project.impact && (
           <div className="project-impact">
@@ -46,9 +46,11 @@ export default function ProjectCard({project}){
               ↗ Live Demo
             </a>
           )}
-          <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link repo-link">
-            ⎇ Repository
-          </a>
+          {project.link && (
+            <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link repo-link">
+              ⎇ Repository
+            </a>
+          )}
           {project.problem && (
             <button
               className="project-link case-study-toggle"

@@ -17,12 +17,28 @@ export default function Experience() {
               <h3>OmniqAI Pvt Ltd</h3>
               <p className="exp-company">Bengaluru, India</p>
             </div>
-            <span className="exp-period">May – Jul 2025</span>
+            <span className="exp-period">Dec 2025 – Jul 2026</span>
           </div>
-          <span className="exp-role">AI DevOps Intern</span>
+          <span className="exp-role">Software Development Intern</span>
           <ul>
-            <li>Automated interview workflows by designing and deploying an <strong>MCP-based agent orchestration system</strong> with resume parsing and NLP-driven assessments, reducing manual screening effort by 60%.</li>
-            <li>Improved release efficiency by containerizing services with <strong>Docker</strong>, establishing <strong>CI/CD pipelines</strong>, and implementing <strong>Playwright UI automation</strong>.</li>
+            <li>Designed and implemented a production <strong>real-time user presence system</strong> for a chat platform using WebSockets, supporting online, away, offline, and in-call states.</li>
+            <li>Performed root-cause analysis across chat, audio/video, and project-management modules; authored <strong>10+ RCA documents</strong> with findings and proposed fixes.</li>
+            <li>Built the React frontend and backend integration for a <strong>Secrets &amp; Keys management</strong> feature for secure API-key and credential storage.</li>
+          </ul>
+        </div>
+
+        <div className="exp-item">
+          <div className="exp-header">
+            <div>
+              <h3>OmniqAI Pvt Ltd</h3>
+              <p className="exp-company">Bengaluru, India</p>
+            </div>
+            <span className="exp-period">May – Jun 2025</span>
+          </div>
+          <span className="exp-role">AI R&amp;D Intern</span>
+          <ul>
+            <li>Contributed to an <strong>MCP Agent Orchestration</strong> proof-of-concept integrated with Mailcow for DevOps and AI orchestration.</li>
+            <li>Worked with <strong>FastAPI, Docker, Playwright, and SonarQube</strong> to support delivery, automation, and code-quality checks.</li>
           </ul>
         </div>
 
@@ -36,9 +52,8 @@ export default function Experience() {
           </div>
           <span className="exp-role">AI Research Intern</span>
           <ul>
-            <li>Built a scalable <strong>Knowledge Graph microservice</strong> for semantic querying in RAG systems.</li>
-            <li>Enhanced LLM performance by 20% through advanced <strong>prompt engineering techniques</strong> (Chain-of-Thought, One-shot, Few-shot prompting).</li>
-            <li>Conducted KPI analysis and deployed <strong>Prometheus metrics</strong> for real-time observability, improving feature adoption by 15%.</li>
+            <li>Built a <strong>Knowledge Graph microservice</strong> with Neo4j, Python, and Ollama from Slack conversational data to ground a RAG system.</li>
+            <li>Containerized and deployed the service with <strong>Docker Swarm and Gitea CI</strong>, with Prometheus monitoring for observability.</li>
           </ul>
         </div>
       </div>

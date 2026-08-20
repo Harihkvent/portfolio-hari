@@ -33,25 +33,26 @@ export default function About(){
             />
           </div>
           <p>
-            I'm a Software Engineer with hands-on expertise in <strong style={{color: 'var(--text)'}}>Generative AI</strong>,{' '}
-            <strong style={{color: 'var(--text)'}}>Agentic systems</strong>, and full-stack development.
-            I design and ship production-grade applications — from LLM-powered pipelines and
-            MCP agent orchestration to containerised microservices and CI/CD workflows.
+            I'm a Software Development Engineer with hands-on experience across{' '}
+            <strong style={{color: 'var(--text)'}}>backend</strong>,{' '}
+            <strong style={{color: 'var(--text)'}}>full-stack</strong>,{' '}
+            <strong style={{color: 'var(--text)'}}>real-time</strong>, and AI-powered systems.
+            I work with Python, FastAPI, React, WebSockets, databases, Docker, and AWS to ship dependable features.
           </p>
           <p>
-            My work sits at the intersection of AI and engineering: building systems that are not
-            only intelligent but also reliable, observable, and built to scale. I thrive on
-            turning ambitious ideas into real products that solve real problems.
+            At OmniqAI, I've delivered production features, investigated issues across chat and
+            audio/video systems, and built AI orchestration proof-of-concepts. I enjoy turning
+            ambitious product ideas into practical, maintainable software.
           </p>
           <div className="about-location">
             📍 Vizianagaram, Andhra Pradesh, India
           </div>
         </div>
         <div className="about-stats">
-          <StatCard target={5}  decimals={0} suffix="+" label="Projects" />
-          <StatCard target={2}  decimals={0} suffix=""  label="Internships" />
-          <StatCard target={60} decimals={0} suffix="%" label="Efficiency ↑" />
-          <StatCard target={20} decimals={0} suffix="%" label="LLM Gain" />
+          <StatCard target={3}  decimals={0} suffix="" label="OmniqAI Roles" />
+          <StatCard target={10} decimals={0} suffix="+" label="RCA Documents" />
+          <StatCard target={3}  decimals={0} suffix="" label="Flagship Projects" />
+          <StatCard target={1}  decimals={0} suffix=" yr" label="Industry Experience" />
         </div>
       </div>
     </section>

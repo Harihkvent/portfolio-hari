@@ -9,15 +9,17 @@ export default function Hero() {
           Available for opportunities
         </div>
         <h1>
-          Hi — I'm{" "}
-          <span className="hero-title-accent">Hari Kiran Ventrapragada</span>
+          Software Development Engineer
         </h1>
-        <p className="hero-subtitle">SDE & GenAI Builder · Full-Stack · DevOps</p>
+        <p className="hero-subtitle">Building AI Agents, Real-Time Systems & Scalable Web Applications</p>
         <p className="hero-desc">
-          I build full-stack products and production-ready GenAI prototypes —
-          from LLM-powered pipelines and MCP agent orchestration to
-          containerised microservices and CI/CD workflows.
+          I build production-ready backend, full-stack, real-time, and AI-powered
+          systems—with a focus on reliability, observability, and scale.
         </p>
+        <div className="hero-badges">
+          <span className="badge">1 Year of Industry Experience at OmniqAI</span>
+          <span className="badge muted">FastAPI • React • WebSockets • AI Systems • AWS</span>
+        </div>
         <div className="hero-actions">
           <a href="#projects" className="btn-primary">
             View Projects →
@@ -57,7 +59,7 @@ export default function Hero() {
           <span className="t-line">
             &nbsp;&nbsp;<span className="t-key">"role"</span>
             <span className="t-comment">: </span>
-            <span className="t-string">"SDE & GenAI Builder"</span><span className="t-comment">,</span>
+            <span className="t-string">"Software Development Engineer"</span><span className="t-comment">,</span>
           </span>
           <span className="t-line">
             &nbsp;&nbsp;<span className="t-key">"focus"</span>
@@ -67,7 +69,7 @@ export default function Hero() {
           <span className="t-line">
             &nbsp;&nbsp;<span className="t-key">"stack"</span>
             <span className="t-comment">: </span>
-            <span className="t-string">"MERN · FastAPI · Docker"</span><span className="t-comment">,</span>
+            <span className="t-string">"React · FastAPI · WebSockets · LangGraph"</span><span className="t-comment">,</span>
           </span>
           <span className="t-line">
             &nbsp;&nbsp;<span className="t-key">"status"</span>
