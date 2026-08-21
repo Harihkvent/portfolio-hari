@@ -28,7 +28,7 @@ export default function Header(){
         <a href="#projects" onClick={handleNavClick}>projects</a>
         <a href="#skills" onClick={handleNavClick}>skills</a>
         <a href="#contact" onClick={handleNavClick}>contact</a>
-        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="nav-resume" onClick={handleNavClick}>resume ↗</a>
+        <a href="/Hari_Kiran_Ventrapragada_Resume (2).pdf" target="_blank" rel="noopener noreferrer" className="nav-resume" onClick={handleNavClick}>resume ↗</a>
       </nav>
     </header>
   )
