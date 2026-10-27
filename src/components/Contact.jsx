@@ -50,19 +50,19 @@ export default function Contact() {
             📧 <a href="mailto:harikiranventrapragada@gmail.com">harikiranventrapragada@gmail.com</a>
           </p>
           <div className="social-links">
-            <a href="https://github.com/Harihkvent" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <a href="https://github.com/Harihkvent" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile of Hari Kiran Ventrapragada">
               <FaGithub />
             </a>
-            <a href="https://www.linkedin.com/in/hari-kiran-ventrapragada" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/hari-kiran-ventrapragada" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile of Hari Kiran Ventrapragada">
               <FaLinkedin />
             </a>
-            <a href="https://www.instagram.com/harihk_24" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <a href="https://www.instagram.com/harihk_24" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile of Hari Kiran Ventrapragada">
               <FaInstagram />
             </a>
-            <a href="https://x.com/harikiran24" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <a href="https://x.com/harikiran24" target="_blank" rel="noopener noreferrer" aria-label="Twitter X Profile of Hari Kiran Ventrapragada">
               <FaTwitter />
             </a>
-            <a href="mailto:harikiranventrapragada@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
+            <a href="mailto:harikiranventrapragada@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email Hari Kiran Ventrapragada directly">
               <FaEnvelope />
             </a>
           </div>

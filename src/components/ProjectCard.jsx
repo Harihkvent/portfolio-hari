@@ -42,12 +42,24 @@ export default function ProjectCard({project}){
         </div>
         <div className="project-links">
           {project.demo && (
-            <a href={project.demo} target="_blank" rel="noopener noreferrer" className="project-link demo-link">
+            <a
+              href={project.demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-link demo-link"
+              aria-label={`View live demo of ${project.title}`}
+            >
               ↗ Live Demo
             </a>
           )}
           {project.link && (
-            <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link repo-link">
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-link repo-link"
+              aria-label={`View source code repository for ${project.title}`}
+            >
               ⎇ Repository
             </a>
           )}
@@ -56,7 +68,7 @@ export default function ProjectCard({project}){
               className="project-link case-study-toggle"
               onClick={() => setExpanded(v => !v)}
               aria-expanded={expanded}
-              aria-label={expanded ? 'Hide case study' : 'Show case study'}
+              aria-label={expanded ? `Hide case study for ${project.title}` : `Show case study for ${project.title}`}
             >
               {expanded ? '▲ Less' : '▼ Case Study'}
             </button>
