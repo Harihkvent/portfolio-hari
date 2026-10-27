@@ -241,6 +241,14 @@ main.container { flex: 1; }
   letter-spacing: -1.5px;
 }
 
+.hero-role {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 8px;
+  letter-spacing: -0.3px;
+}
+
 .hero-title-accent {
   background: linear-gradient(135deg, var(--accent) 0%, #7dd3fc 50%, var(--purple) 100%);
   background-size: 200% 200%;

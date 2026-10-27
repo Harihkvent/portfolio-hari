@@ -26,26 +26,26 @@ export default function About(){
           <div className="about-avatar">
             <img
               src="/avatar.png"
-              alt="Hari Kiran Ventrapragada — Software Engineer"
+              alt="Hari Kiran Ventrapragada — Software Developer & AI Systems Engineer"
               loading="lazy"
               width="120"
               height="120"
             />
           </div>
           <p>
-            I'm a Software Development Engineer with hands-on experience across{' '}
-            <strong style={{color: 'var(--text)'}}>backend</strong>,{' '}
+            I'm <strong>Hari Kiran Ventrapragada</strong>, a Software Development Engineer
+            and Information Technology undergraduate at <strong>Maharaj Vijayaram Gajapathi Raj (MVGR) College of Engineering</strong>, Vizianagaram.
+            I have hands-on experience building dependable <strong style={{color: 'var(--text)'}}>backend</strong>,{' '}
             <strong style={{color: 'var(--text)'}}>full-stack</strong>,{' '}
-            <strong style={{color: 'var(--text)'}}>real-time</strong>, and AI-powered systems.
-            I work with Python, FastAPI, React, WebSockets, databases, Docker, and AWS to ship dependable features.
+            <strong style={{color: 'var(--text)'}}>real-time</strong>, and AI-powered systems using Python, FastAPI, React, WebSockets, Docker, and AWS.
           </p>
           <p>
-            At OmniqAI, I've delivered production features, investigated issues across chat and
-            audio/video systems, and built AI orchestration proof-of-concepts. I enjoy turning
-            ambitious product ideas into practical, maintainable software.
+            At OmniqAI, I delivered production features (including real-time presence systems), investigated complex issues across chat and
+            audio/video pipelines with 10+ RCA documents, and built AI agent orchestration proof-of-concepts. I enjoy solving algorithmic challenges and turning
+            ambitious system ideas into practical, maintainable software.
           </p>
           <div className="about-location">
-            📍 Vizianagaram, Andhra Pradesh, India
+            📍 Vizianagaram, Andhra Pradesh, India · MVGR College of Engineering
           </div>
         </div>
         <div className="about-stats">
@@ -58,4 +58,3 @@ export default function About(){
     </section>
   )
 }
-

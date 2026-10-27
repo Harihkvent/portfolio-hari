@@ -25,6 +25,7 @@ export default function Header(){
       <nav id="main-nav" className={menuOpen ? 'nav-open' : ''}>
         <a href="#about" onClick={handleNavClick}>about</a>
         <a href="#experience" onClick={handleNavClick}>experience</a>
+        <a href="#education" onClick={handleNavClick}>education</a>
         <a href="#projects" onClick={handleNavClick}>projects</a>
         <a href="#skills" onClick={handleNavClick}>skills</a>
         <a href="#contact" onClick={handleNavClick}>contact</a>
@@ -33,4 +34,3 @@ export default function Header(){
     </header>
   )
 }
-

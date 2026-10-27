@@ -9,9 +9,12 @@ export default function Hero() {
           Available for opportunities
         </div>
         <h1>
-          Software Development Engineer
+          Hari Kiran <span className="hero-title-accent">Ventrapragada</span>
         </h1>
-        <p className="hero-subtitle">Building AI Agents, Real-Time Systems & Scalable Web Applications</p>
+        <h2 className="hero-role">
+          Software Developer &amp; AI Systems Engineer
+        </h2>
+        <p className="hero-subtitle">Building AI Agents, Real-Time Systems &amp; Scalable Web Applications</p>
         <p className="hero-desc">
           I build production-ready backend, full-stack, real-time, and AI-powered
           systems—with a focus on reliability, observability, and scale.
@@ -92,4 +95,3 @@ export default function Hero() {
     </section>
   );
 }
-

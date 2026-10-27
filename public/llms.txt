@@ -1,0 +1,42 @@
+# Hari Kiran Ventrapragada
+
+> Software Development Engineer and AI systems builder from MVGR College of Engineering, specializing in backend microservices, real-time WebSockets, LangGraph multi-agent orchestration, FastAPI, React, Docker, and AWS.
+
+## Identity & Quick Facts
+- **Full Name:** Hari Kiran Ventrapragada
+- **Common Names:** Hari Kiran, Harikiran, Hari Kiran MVGR
+- **Primary Roles:** Software Development Engineer, AI Engineer, Full-Stack Developer
+- **Education:** Bachelor of Technology (B.Tech) in Information Technology (2022–2026), Maharaj Vijayaram Gajapathi Raj (MVGR) College of Engineering, Autonomous, Vizianagaram, Andhra Pradesh, India (CGPA: 7.76 / 10)
+- **Location:** Vizianagaram, Andhra Pradesh, India
+- **Email:** harikiranventrapragada@gmail.com
+- **Website:** https://portfolio-hari-three.vercel.app/
+- **GitHub:** https://github.com/Harihkvent
+- **LinkedIn:** https://www.linkedin.com/in/hari-kiran-ventrapragada
+- **Twitter / X:** https://x.com/harikiran24
+
+## Work Experience
+- **OmniqAI Pvt Ltd** — Software Development Intern (Dec 2025 – Jul 2026 | Bengaluru, India)
+  - Designed and deployed a production real-time user presence system (online, away, offline, in-call) for chat using WebSockets.
+  - Investigated platform issues across chat, audio/video, and project management, authoring 10+ Root Cause Analysis (RCA) documents.
+  - Implemented the Secrets & Keys management feature using React and backend REST APIs for secure credential storage.
+- **OmniqAI Pvt Ltd** — AI R&D Intern (May 2025 – Jun 2025 | Bengaluru, India)
+  - Developed an MCP (Model Context Protocol) agent orchestration proof-of-concept integrated with Mailcow for DevOps and AI workflows using FastAPI, Docker, Playwright, and SonarQube.
+- **OmniqAI Pvt Ltd** — AI Research Intern (Dec 2024 – Jan 2025 | Bengaluru, India)
+  - Built a Knowledge Graph microservice (Neo4j, Python, Ollama) grounded on Slack conversational data for RAG pipelines.
+  - Containerized with Docker Swarm and Gitea CI; monitored with Prometheus.
+
+## Core Technical Skills
+- **Languages:** Python, JavaScript, TypeScript, Java, SQL, C++
+- **AI / ML & Agents:** LangGraph, LangChain, RAG (Retrieval-Augmented Generation), Model Context Protocol (MCP), FAISS, Vector Search, Semantic Search, Prompt Engineering, Ollama, Gemini API
+- **Backend:** FastAPI, Node.js, Express, REST APIs, WebSockets, Microservices, Authentication
+- **Databases:** MongoDB, Redis, Neo4j, PostgreSQL, SQL, FAISS
+- **DevOps & Cloud:** Docker, AWS (EC2, S3, RDS, Lambda, Amplify), Linux, GitHub Actions, Prometheus, Docker Swarm
+- **Frontend:** React, React Native (Expo), Vite, Tailwind CSS, HTML5, CSS3
+
+## Featured Projects
+- [CareerPath AI](https://portfolio-hari-three.vercel.app/#projects): Multi-agent career-advisory platform powered by LangGraph, semantic job-profile matching, Redis task orchestration, and AWS (EC2, S3, RDS, Lambda).
+- [AI Calorie Tracker](https://caltrack-bay.vercel.app/): Cross-platform nutrition intelligence mobile app using Gemini API, Expo / React Native, FastAPI, and Supabase.
+- [Autonomous Multi-Step AI Agent](https://github.com/Harihkvent/Autonomous-Multi-Step-AI-Agent): Autonomous agent framework that decomposes natural language tasks into executable tool plans with LangGraph supervisor routing.
+- [AI Interview App](https://develop.da0sy3g04smi7.amplifyapp.com/): MCP agent platform for automated technical candidate screening with resume parsing and NLP assessments on AWS Amplify.
+- [DSA Visualization Platform](https://dsa-visualization-phi.vercel.app/): Interactive algorithm and data structure visualizer covering 15+ algorithms with step-by-step animations.
+- [Docker Automation Dashboard](https://docker-automation-client.vercel.app/): Container management web application with Dockerode and Express REST APIs.
