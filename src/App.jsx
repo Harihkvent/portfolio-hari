@@ -8,12 +8,18 @@ import Education from './components/Education'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
-
 import ScrollToTop from './components/ScrollToTop'
+import Canvas3DBackground from './components/Canvas3DBackground'
+import SideRails from './components/SideRails'
+import { useScroll3D } from './hooks/useScroll3D'
 
 export default function App() {
+  useScroll3D();
+
   return (
     <div className="app" id="top">
+      <Canvas3DBackground />
+      <SideRails />
       <ScrollToTop />
       <Header />
       <main className="container">

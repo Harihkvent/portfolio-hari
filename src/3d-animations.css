@@ -1,0 +1,694 @@
+/* ══════════════════════════════════════════════════════════════════
+   3D ANIMATION, KINETIC TYPOGRAPHY & EXPANSIVE SCREEN LAYOUT SYSTEM
+   Hari Kiran Ventrapragada — Portfolio 3D Experience
+   ══════════════════════════════════════════════════════════════════ */
+
+/* ─── Widescreen Expansion (Eliminates empty margins on the sides) ─── */
+.container {
+  max-width: 1440px !important;
+  width: 92% !important;
+  margin: 0 auto !important;
+  padding: 32px 24px !important;
+}
+
+@media (min-width: 1530px) {
+  .container {
+    max-width: 1540px !important;
+    width: 90% !important;
+  }
+}
+
+.hero {
+  gap: 72px !important;
+  padding: 96px 0 80px !important;
+  position: relative !important;
+  overflow: visible !important;
+}
+
+.hero .intro {
+  flex: 1.18 !important;
+  position: relative !important;
+  z-index: 5 !important;
+}
+
+.hero h1 {
+  font-size: 3.6rem !important;
+  letter-spacing: -2px !important;
+}
+
+/* ─── 3D Ambient Particle Universe Background ──────────────────── */
+.canvas-3d-bg {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.9;
+}
+
+/* ─── Scroll-Driven 3D Perspective Tilt ("To and Fro" Movement) ─── */
+:root {
+  --scroll-tilt-x: 0deg;
+  --scroll-sway: 0deg;
+}
+
+.section {
+  transform: perspective(1200px) rotateX(var(--scroll-tilt-x, 0deg));
+  transform-style: preserve-3d;
+  transition: transform 0.22s cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: transform;
+}
+
+.project-card,
+.stat-card,
+.exp-item {
+  transform: perspective(1000px) rotateX(var(--scroll-tilt-x, 0deg));
+  transform-style: preserve-3d;
+  transition: transform 0.26s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.25s ease, box-shadow 0.25s ease;
+  will-change: transform;
+}
+
+.project-card:hover {
+  transform: perspective(1000px) translateY(-8px) rotateX(4deg) scale(1.02);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.45), 0 0 35px rgba(0, 217, 179, 0.16);
+}
+
+/* ─── Hero 3D Stage & Flagship Centerpiece ─────────────────────── */
+.hero-3d-stage {
+  flex: 1;
+  max-width: 520px;
+  min-width: 330px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  perspective: 1200px;
+  z-index: 10;
+}
+
+/* Stage Mode Switcher Tabs */
+.hero-stage-tabs {
+  display: inline-flex;
+  gap: 6px;
+  background: rgba(13, 17, 23, 0.9);
+  border: 1px solid var(--border);
+  padding: 4px;
+  border-radius: 24px;
+  margin-bottom: 16px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  z-index: 25;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
+
+.stage-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+.stage-tab:hover {
+  color: var(--text);
+}
+
+.stage-tab.active {
+  background: var(--surface-2);
+  color: var(--accent);
+  box-shadow: 0 2px 12px rgba(0, 217, 179, 0.25);
+  border-color: var(--border-accent);
+}
+
+.stage-tab-icon {
+  font-size: 0.85rem;
+}
+
+/* Viewport */
+.hero-stage-viewport {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 450px;
+}
+
+.hero-terminal-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.hero-terminal-container .hero-terminal {
+  display: block !important;
+  margin: 0 auto;
+}
+
+/* 3D Portrait Stage */
+.hero-portrait-stage {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 0;
+  overflow: visible;
+}
+
+/* ─── Kinetic 3D Marquee Across Full Screen Width ──────────────── */
+/* Streams across 100vw, passing behind the portrait and intro */
+.marquee-behind-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
+  overflow: hidden;
+}
+
+.marquee-row {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-track {
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+  font-family: var(--font-sans);
+  font-size: 2.2rem;
+  font-weight: 900;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1.1px rgba(0, 217, 179, 0.32);
+  line-height: 1;
+  will-change: transform;
+}
+
+.marquee-left .marquee-track {
+  animation: marquee-scroll-left 25s linear infinite;
+}
+
+.marquee-right .marquee-track {
+  animation: marquee-scroll-right 28s linear infinite;
+}
+
+.marquee-row-3 .marquee-track {
+  -webkit-text-stroke: 1.1px rgba(167, 139, 250, 0.3);
+  font-size: 1.65rem;
+  animation-duration: 32s;
+}
+
+.marquee-star {
+  color: var(--accent);
+  font-size: 1.2rem;
+  opacity: 0.7;
+  text-shadow: 0 0 12px rgba(0, 217, 179, 0.6);
+}
+
+.marquee-dot {
+  color: var(--purple);
+  font-size: 1.3rem;
+  opacity: 0.65;
+}
+
+@keyframes marquee-scroll-left {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+@keyframes marquee-scroll-right {
+  0% { transform: translate3d(-50%, 0, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+/* ─── 3D Foreground Portrait Card ────────────────────────────── */
+.portrait-card-3d {
+  position: relative;
+  z-index: 10;
+  width: 320px;
+  border-radius: 20px;
+  background: rgba(13, 17, 23, 0.92);
+  border: 1px solid rgba(0, 217, 179, 0.45);
+  box-shadow:
+    0 24px 60px rgba(0, 0, 0, 0.7),
+    0 0 50px rgba(0, 217, 179, 0.25);
+  transform-style: preserve-3d;
+  transition: transform 0.15s ease-out, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.portrait-card-3d.floating {
+  animation: portrait-float-sway 6s ease-in-out infinite;
+}
+
+@keyframes portrait-float-sway {
+  0%, 100% {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px);
+  }
+  25% {
+    transform: perspective(1000px) rotateX(3deg) rotateY(-3deg) translateY(-8px);
+  }
+  50% {
+    transform: perspective(1000px) rotateX(0deg) rotateY(3deg) translateY(-14px);
+  }
+  75% {
+    transform: perspective(1000px) rotateX(-2deg) rotateY(-2deg) translateY(-6px);
+  }
+}
+
+/* Pulsing aura */
+.portrait-backdrop-glow {
+  position: absolute;
+  inset: -14px;
+  border-radius: 32px;
+  background: radial-gradient(circle, rgba(0, 217, 179, 0.35) 0%, rgba(167, 139, 250, 0.2) 50%, transparent 75%);
+  filter: blur(24px);
+  z-index: -1;
+  pointer-events: none;
+  animation: glow-pulse 4s ease-in-out infinite;
+}
+
+@keyframes glow-pulse {
+  0%, 100% { opacity: 0.7; transform: scale(0.98); }
+  50% { opacity: 1; transform: scale(1.04); }
+}
+
+/* Cyber corner brackets */
+.portrait-frame-corners .corner {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-color: var(--accent);
+  border-style: solid;
+  pointer-events: none;
+  z-index: 15;
+  transition: all 0.3s ease;
+}
+
+.corner.c-tl { top: -2px; left: -2px; border-width: 2px 0 0 2px; border-top-left-radius: 6px; }
+.corner.c-tr { top: -2px; right: -2px; border-width: 2px 2px 0 0; border-top-right-radius: 6px; }
+.corner.c-bl { bottom: -2px; left: -2px; border-width: 0 0 2px 2px; border-bottom-left-radius: 6px; }
+.corner.c-br { bottom: -2px; right: -2px; border-width: 0 2px 2px 0; border-bottom-right-radius: 6px; }
+
+.portrait-card-3d:hover .corner {
+  width: 18px;
+  height: 18px;
+  border-color: #7dd3fc;
+  box-shadow: 0 0 10px rgba(0, 217, 179, 0.7);
+}
+
+/* Image Wrapper */
+.portrait-image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1.06;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #0d1117;
+}
+
+.portrait-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.portrait-card-3d:hover .portrait-photo {
+  transform: scale(1.03);
+}
+
+/* Specular glare sheen */
+.portrait-glare {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+  opacity: 0.85;
+  z-index: 5;
+  transition: opacity 0.3s ease;
+}
+
+.portrait-bottom-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 90px;
+  background: linear-gradient(to top, rgba(9, 13, 24, 0.95) 0%, rgba(9, 13, 24, 0.4) 60%, transparent 100%);
+  pointer-events: none;
+  z-index: 4;
+}
+
+/* Holographic 3D Floating Badges */
+.portrait-badge {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(13, 17, 23, 0.92);
+  border: 1px solid var(--border-accent);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 217, 179, 0.2);
+  z-index: 12;
+  transform: translateZ(35px);
+  transition: all 0.3s ease;
+}
+
+.badge-top-left {
+  top: -12px;
+  left: -14px;
+}
+
+.badge-bottom-right {
+  top: 48px;
+  right: -18px;
+  border-color: rgba(167, 139, 250, 0.4);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), 0 0 15px rgba(167, 139, 250, 0.2);
+}
+
+.badge-bottom-tag {
+  bottom: 40px;
+  left: -14px;
+}
+
+.badge-pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #3fb950;
+  box-shadow: 0 0 8px #3fb950;
+  animation: pulse-dot 1.8s ease-in-out infinite;
+}
+
+.portrait-location-tag {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%) translateZ(25px);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  background: rgba(9, 13, 24, 0.85);
+  padding: 3px 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(48, 54, 61, 0.6);
+  white-space: nowrap;
+  z-index: 12;
+}
+
+/* Stage Footer Caption */
+.hero-stage-footer-caption {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  margin-top: 14px;
+  text-align: center;
+}
+
+.caption-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0.6;
+}
+
+/* ─── Side Rails (HUD Flanks for Wide Screens) ─────────────────── */
+.side-rail {
+  position: fixed;
+  bottom: 0;
+  z-index: 45;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: auto;
+}
+
+.side-rail-left {
+  left: 24px;
+}
+
+.side-rail-right {
+  right: 24px;
+}
+
+.rail-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.rail-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(13, 17, 23, 0.9);
+  border: 1px solid var(--border-accent);
+  padding: 4px 8px;
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+}
+
+.rail-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 8px var(--accent);
+  animation: pulse-dot 2s infinite ease-in-out;
+}
+
+.rail-status-text {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.5px;
+}
+
+.rail-text-vertical {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 2px;
+  color: var(--text-dim);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.rail-text-vertical:hover {
+  color: var(--text-muted);
+}
+
+.rail-divider {
+  color: var(--accent);
+  opacity: 0.6;
+}
+
+.rail-progress-meter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.progress-number {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--accent);
+  background: rgba(13, 17, 23, 0.88);
+  border: 1px solid var(--border-accent);
+  padding: 3px 6px;
+  border-radius: 6px;
+  min-width: 36px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 217, 179, 0.15);
+}
+
+.progress-bar-track {
+  width: 3px;
+  height: 70px;
+  background: rgba(48, 54, 61, 0.5);
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar-fill {
+  width: 100%;
+  background: linear-gradient(180deg, var(--accent) 0%, var(--purple) 100%);
+  border-radius: 2px;
+  box-shadow: 0 0 8px var(--accent);
+  transition: height 0.1s ease-out;
+}
+
+.rail-socials {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.rail-social-link {
+  color: var(--text-muted);
+  font-size: 1.15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+
+.rail-social-link:hover {
+  color: var(--accent);
+  transform: translateY(-3px) scale(1.15);
+  filter: drop-shadow(0 0 8px rgba(0, 217, 179, 0.6));
+}
+
+.rail-line {
+  width: 1px;
+  height: 90px;
+  background: linear-gradient(180deg, var(--border-accent) 0%, rgba(48, 54, 61, 0.8) 50%, transparent 100%);
+  position: relative;
+}
+
+.rail-line-glow {
+  position: absolute;
+  top: 0;
+  left: -1px;
+  width: 3px;
+  height: 14px;
+  background: var(--accent);
+  border-radius: 2px;
+  box-shadow: 0 0 10px var(--accent);
+  animation: line-scan 3s ease-in-out infinite;
+}
+
+@keyframes line-scan {
+  0% { top: 0; opacity: 0.2; }
+  50% { top: 76px; opacity: 1; }
+  100% { top: 0; opacity: 0.2; }
+}
+
+/* ─── Widescreen Grid Optimizations ───────────────────────────── */
+.project-list {
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)) !important;
+  gap: 28px !important;
+}
+
+.about-content {
+  grid-template-columns: 1.35fr 1fr !important;
+  gap: 48px !important;
+}
+
+/* Hide side rails on screens under 1320px to avoid overlap with container */
+@media (max-width: 1320px) {
+  .side-rail {
+    display: none;
+  }
+}
+
+/* ── Responsive adjustments for 3D Stage ── */
+@media (max-width: 900px) {
+  .hero-3d-stage {
+    max-width: 420px;
+  }
+  .portrait-card-3d {
+    width: 280px;
+  }
+  .marquee-track {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 40px !important;
+    padding: 56px 0 48px !important;
+  }
+  .hero-3d-stage {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+  .portrait-card-3d {
+    width: 270px;
+  }
+  .badge-top-left {
+    left: -4px;
+    top: -10px;
+  }
+  .badge-bottom-right {
+    right: -4px;
+    top: 40px;
+  }
+  .badge-bottom-tag {
+    left: -4px;
+    bottom: 34px;
+  }
+  .marquee-track {
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-3d-stage {
+    max-width: 300px;
+  }
+  .portrait-card-3d {
+    width: 250px;
+  }
+  .portrait-badge {
+    font-size: 0.65rem;
+    padding: 4px 9px;
+  }
+}
